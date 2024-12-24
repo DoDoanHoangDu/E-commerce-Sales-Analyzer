@@ -1,0 +1,122 @@
+body {
+    background-image: url('background.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
+button {
+    color: yellow;
+    background-color: green;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.page-name {
+    font-size: 40px;
+    font-family: Arial;
+    color: yellow;
+    font-weight: bold;
+    text-align: center;
+}
+
+.table-text {
+    font-size: 20px;
+    font-family: Arial;
+    margin-top: 80px;
+    margin-bottom: 10px;
+    color: yellow;
+    font-weight: bold;
+    text-align: center;
+}
+
+.instruction-text {
+    font-size: 20px;
+}
+
+.output-text {
+    font-family: 'Courier New';
+    font-size: 18px;
+    text-align: center;
+}
+
+/*Output Container*/
+.output-container {
+    width: 80%;
+    max-width: 500px;
+    margin: 0 auto;
+    margin-bottom: 20px;
+    padding: 20px;
+    border: 1px solid black;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+}
+
+.output-container input,
+.output-container button {
+    display: inline-block;
+    margin: 10px 0;
+    padding: 8px;
+    width: 32%;
+    box-sizing: border-box;
+    font-size: 14px;
+}
+
+.output-container .total-info-button {
+    display: block;
+    margin: 10px 0;
+    padding: 8px;
+    width: 100%;
+    box-sizing: border-box;
+    font-size: 16px;
+}
+
+
+/*Input Container*/
+.input-container {
+    width: 80%;
+    max-width: 500px;
+    margin: 0 auto;
+    margin-bottom: 20px;
+    padding: 20px;
+    border: 1px solid black;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+}
+
+.input-container input,
+.input-container button {
+    display: block;
+    margin: 10px 0;
+    padding: 8px;
+    width: 100%;
+    box-sizing: border-box;
+    font-size: 16px;
+}
+
+/*Table*/
+table {
+    margin: 0 auto;
+    width: 90%;
+    max-width: 1000px;
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+
+th, td {
+    padding: 12px 15px;
+    text-align: center;
+    border: 1px solid black;
+}
+
+th {
+    background-color: yellowgreen;
+    color: white;
+}
+
+td {
+    background-color: lightgray;
+}
+
+tr:hover td {
+    background-color: red;
+}
