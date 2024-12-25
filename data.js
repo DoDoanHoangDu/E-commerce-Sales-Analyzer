@@ -43,6 +43,7 @@ function addRecord(input, index = null) {
                 allOrdersArray.push(input);
             } else {
                 console.log("Duplicate Data Point.");
+                return false;
             }
             timeMoneyMap.set(timeKey, (timeMoneyMap.get(timeKey) || 0) + price);
             let shop = shopMap.get(shopId);
