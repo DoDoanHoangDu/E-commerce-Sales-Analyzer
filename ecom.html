@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+
+<html> 
+    <head>
+        <title>E-commerce Sales Analyser</title>
+        <link rel="stylesheet" href="ecom.css">
+    </head>
+    <body>
+        <p class = 'page-name'>E-commerce Sales Analyser</p>
+        <div class="input-container">
+            <p class ='instruction-text'>Input data:</p>
+            <input placeholder="<CustomerID> <ProductID> <Price> <ShopID> <HH:MM:SS>" class="full-input">
+            <button id = 'addBtn' onclick="addAllField()">Add</button>
+            <p class ='instruction-text'>Or upload data:</p>
+            <button onclick="upLoad()">Upload</button>
+            <p class ='instruction-text'>Clear all data:</p>
+            <button onclick="resetData()">Reset</button>
+        </div>
+
+        <div class = 'output-container'>
+            <button class ='total-info-button' onclick="getTotalInfo()">Show Total Info</button>
+            <p class = 'output-text total-info'></p>
+
+            <input placeholder="ShopID" class="shop-info-input shopID-input">
+            <input placeholder="CustomerID (optional)" class="shop-info-input customerID-input">
+            <button id = 'getShopInfo' onclick="getShopInfo()">Show Shop Info</button>
+            <p class = 'output-text specific-info'></p>
+
+            <input placeholder="Start <HH:MM:SS>" class="time-input start-time-input">
+            <input placeholder="End <HH:MM:SS>" class="time-input end-time-input">
+            <button id = 'totalRevenueInPeriod' onclick="totalRevenueInPeriod()">Revenue In Period</button>
+            <p class = 'output-text in-period-info'></p>
+
+        </div>
+
+        <table class = 'data-table'>
+            <p class = 'table-text'>Click on columns to sort table</p>
+            <thead>
+                <tr>
+                    <th>Customer ID</th>
+                    <th>Product ID</th>
+                    <th data-type="number" >Price</th>
+                    <th>Shop ID</th>
+                    <th>Time</th>
+                </tr>
+                <tbody>
+                    <!-- Data rows -->
+                </tbody>
+            </thead>
+        </table>
+
+        <div class="pagination">
+            <!-- Pagination buttons -->
+        </div>
+
+        <p class = 'page-name'>END</p>
+        <script type = "module" src = 'data.js'></script>
+        <script type="module" src="query.js"></script>
+        <script type="module" src="parsing.js"></script>
+        <script type="module" src="global_variables.js"></script>
+        <script type="module" src="element_features.js"></script>
+        <script type="module" src="table_functions.js"></script>
+    </body>
+</html>
