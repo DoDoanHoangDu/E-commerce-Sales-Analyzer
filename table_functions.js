@@ -12,7 +12,6 @@ export function renderTable(page = currentPage) {
     for (let i = startIndex; i < endIndex; i++) {
         const row = document.createElement('tr');
         const rowData = allOrdersArray[i];
-        console.log(rowData)
         row.innerHTML = `
             <td>${rowData[0]}</td>
             <td>${rowData[1]}</td>
