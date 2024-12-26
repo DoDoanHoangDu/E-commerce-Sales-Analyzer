@@ -51,6 +51,7 @@ export function totalRevenueInPeriod() {
             prefixSum[i + 1] = prefixSum[i] + timeMoneyMap.get(time);
         }
         setCalculated(true);
+        console.log('sorted');
     }
     try {
         let totalRevenue = 0;
