@@ -100,12 +100,13 @@ export function upLoad() {
             lines.forEach((line, index) => {
                 if (line.trim()) {
                     if (addRecord(line,index+1)) {
-                        renderTable();
-                        renderPagination();
+                        null;
                     }
                 } else {
                     console.log(`Skipping empty line ${index + 1}`);
                 }
+                renderTable();
+                renderPagination();
             });
             alert("Adding completed.");
         };
